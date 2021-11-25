@@ -1,0 +1,194 @@
+<! DOCTYPE html >
+< html  lang = " pt-br " >
+
+< cabeça >
+    < meta  charset = " UTF-8 " >
+    < meta  http-equiv = " X-UA-Compatible " content = " IE = edge " >
+    < meta  name = " viewport " content = " width = device-width, initial-scale = 1.0 " >
+    < title > Pokémon </ title >
+    < link  rel = " stylesheet " href = " estilo.css " >
+
+</ head >
+
+< corpo >
+    < formulário >
+
+        < seção  id = " descricao_do_pokemom " >
+            < cabeçalho >
+                < h2 > CLUBE POKÉMOM </ h2 >
+            </ header >
+
+            < div  class = " input-grup " >
+                < label  id = " rotulo-numero-nacional " for = " campo-numero-nacional " > Numero nacional: </ label >
+                < input  id = " rotulo-numero-nacional " type = " number " min = " 0 " >
+            </ div >
+
+            < div  class = " input-grup " >
+                < label  id = " rotulo-nome " for = " campo-nome " > Nome: </ label >
+                < input  id = " rotulo-nome " name = " nome " type = " text " >
+            </ div >
+
+            < label  for = " campo-tipo " > Tipo: </ label >
+            < selecione  id = " tipo1 " >
+                < opção  selecionada  valor desabilitado  = "" > selecione </ opção >
+                < option  value = "" > </ option >
+                < opção > Aço </ opção >
+                < opção > Água </ opção >
+                < opção > Dragão </ opção >
+                < opção > Elétrico </ opção >
+                < opção > Fada </ opção >
+                < opção > Fantasma </ opção >
+                < opção > Fogo </ opção >
+                < opção > Gelo </ opção >
+                < opção > Lutador </ opção >
+                < opção > Normal </ opção >
+                < opção > Pedra </ opção >
+                < opção > Planta </ opção >
+                < opção > Psíquico </ opção >
+                < opção > Sombrio </ opção >
+                < opção > Terra </ opção >
+                < opção > Venenoso </ opção >
+                < opção > Voador </ opção >
+
+            </ select >
+
+
+
+            < label  id = " label2 " for = " campo-tipo " > </ label >
+            < selecione  id = " tipo2 " >
+                < opção  selecionada  valor desabilitado  = "" > selecione </ opção >
+                < option  value = "" > </ option >
+                < opção > Aço </ opção >
+                < opção > Água </ opção >
+                < opção > Dragão </ opção >
+                < opção > Elétrico </ opção >
+                < opção > Fada </ opção >
+                < opção > Fantasma </ opção >
+                < opção > Fogo </ opção >
+                < opção > Gelo </ opção >
+                < opção > Lutador </ opção >
+                < opção > Normal </ opção >
+                < opção > Pedra </ opção >
+                < opção > Planta </ opção >
+                < opção > Psíquico </ opção >
+                < opção > Sombrio </ opção >
+                < opção > Terra </ opção >
+                < opção > Venenoso </ opção >
+                < opção > Voador </ opção >
+
+            </ select >
+
+
+            < seção  id = " pontos " >
+
+                < div  class = " grup1 " >
+                    HP:
+                    < input  id = " hp " type = " number " min = " 1 " max = " 255 " >
+                </ div >
+
+                < div  class = " grup2 " >
+                    Ataque:
+                    < input  id = " ataque " type = " number " min = " 0 " >
+                </ div >
+
+                < div  class = " grup3 " >
+                    Defesa:
+                    < input  id = " defesa " type = " number " min = " 0 " >
+                </ div >
+
+                < div  class = " grup4 " >
+                    Ataque especial:
+                    < input  id = " especiala " type = " número " min = " 0 " >
+                </ div >
+
+                < div  class = " grup5 " >
+                    Defesa especial:
+                    < input  id = " especiald " type = " número " min = " 0 " >
+                </ div >
+
+                < div  class = " grup6 " >
+                    Veocidade:
+                    < input  id = " velocidade " type = " number " min = " 0 " >
+                </ div >
+                < button  onclick = " somar () " > somar </ button > Soma de todas as estatísticas básicas (Pontos de Vida, Ataque,
+                Defesa, Ataque Especial, Defesa Especial e Velocidade) < br >
+                < div >
+                    Total: < span > </ span >
+                </ div >
+
+
+                < script >
+
+                    var  n1  =  documento . querySelector ( '#hp' )
+                    var  n2  =  documento . querySelector ( '#ataque' )
+                    var  n3  =  documento . querySelector ( '#defesa' )
+                    var  n4  =  documento . querySelector ( '#especiala' )
+                    var  n5  =  documento . querySelector ( '#especialb' )
+                    var  n6  =  documento . querySelector ( '#velocidade' )
+
+
+                    var  resultado  =  documento . querySelector ( 'span' )
+
+                    function  somar ( )  {
+                        resultado . innerHTML  =  parseInt ( hp . value )  +  parseInt ( ataque . value )  +  parseInt ( defesa . value )  +  parseInt ( especiala . value )  +  parseInt ( especiald . value )  +  parseInt ( velocidade . value )
+                    }
+                </ script >
+
+            </ seção >
+
+            < seção >
+                < div  class = " input-grup " >
+                    < label  id = " rotulo-geracao " for = " campo-geracao " > Geração: </ label >
+                    < input  id = " rotulo-geracao " type = " number " min = " 1 " max = " 7 " >
+                </ div >
+
+                < div  class = " input-grup " >
+                    < label  id = " rotulo-lendario " for = " campo-lendario " > Lendario: </ label >
+                    < input  id = " rotulo-lendario " type = " checkbox " > SIM
+                    < input  id = " rotulo-lendario " type = " checkbox " > NÂO
+                </ div >
+
+
+                < label  id = " label2 " for = " campo-cor " > Cor </ label >
+                < selecione  id = " tipo2 " >
+                    < opção  selecionada  valor desabilitado  = "" > selecione </ opção >
+                    < option  value = "" > </ option >
+                    < opção > Amarelo </ opção >
+                    < opção > Azul </ opção >
+                    < opção > Branco </ opção >
+                    < opção > Cinza </ opção >
+                    < opção > Marrom </ opção >
+                    < opção > Preto </ opção >
+                    < opção > Rosa </ opção >
+                    < opção > Roxo </ opção >
+                    < opção > Verde </ opção >
+                    < opção > Vermelho </ opção >
+                </ select >
+
+                < div  class = " input-grup " >
+                    < label  id = " rotulo-altua " for = " campo-altura " > Altura: </ label >
+                    < input  id = " rotulo-altua " type = " text " >
+                </ div >
+
+                < div  class = " input-grup " >
+                    < label  id = " rotulo-peso " for = " campo-peso " > Peso: </ label >
+                    < input  id = " rotulo-peso " type = " number " min = " 1 " >
+                </ div >
+
+                < div  class = " input-grup " >
+                    < label  id = " rotulo-taxa-de-captura " para = " campo-taxa-de-captura " > Taxa de captura: </ label >
+                    < input  id = " rotulo-taxa-de-captura " type = " number " min = " 0 " max = " 255 " >
+                </ div >
+
+            </ seção >
+            < botão > Enviar </ botão >
+
+
+
+        </ seção >
+
+    </ form >
+
+</ body >
+
+</ html >
